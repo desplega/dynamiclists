@@ -11,10 +11,10 @@
                 <div class="p-6 text-gray-900">
                     <form method="POST" action={{ route('dashboard') }} enctype="multipart/form-data">
                         <div class="mt-4">
-                            <x-input-label for="csvlist" :value="__('CSV List')" />
+                            <x-input-label for="csvfile" :value="__('CSV List')" />
 
-                            <input class="mt-1 w-full" name="csvlist" type="file" id="csvlist">
-                            <x-input-error :messages="$errors->get('csvlist')" class="mt-2" />
+                            <input class="mt-1 w-full" name="csvfile" type="file" id="csvfile">
+                            <x-input-error :messages="$errors->get('csvfile')" class="mt-2" />
                         </div>
 
                         <div class="flex items-center justify-end mt-4">
