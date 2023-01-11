@@ -9,10 +9,10 @@ class Field extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['dylist_id', 'field', 'value'];
+    protected $fillable = ['dynlist_id', 'field', 'value'];
 
-    public function dylist()
+    public function dynlist()
     {
-        $this->belongsTo(Dylist::class);
+        $this->belongsTo(dynlist::class);
     }
 }

@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DylistAPIController;
+use App\Http\Controllers\DynlistAPIController;
 use App\Http\Controllers\AuthAPIController;
 
 /*
@@ -21,7 +21,7 @@ Route::post('/login', [AuthAPIController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/me', [AuthAPIController::class, 'me']);
     // IMPORT
-    Route::post('/import', [DylistAPIController::class, 'import']);
+    Route::post('/import', [DynlistAPIController::class, 'import']);
     // SEARCH
-    Route::get('/search', [DylistAPIController::class, 'search']);
+    Route::get('/search', [DynlistAPIController::class, 'search']);
 });
