@@ -13,6 +13,6 @@ class Field extends Model
 
     public function dynlist()
     {
-        $this->belongsTo(dynlist::class);
+        return $this->belongsTo(dynlist::class);
     }
 }

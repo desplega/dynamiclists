@@ -13,6 +13,6 @@ class Dynlist extends Model
 
     public function fields()
     {
-        $this->hasMany(Field::class);
+        return $this->hasMany(Field::class);
     }
 }
